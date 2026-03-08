@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rody's Quiet Place [BETA]</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.05);
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+        a {
+            color: #66b0ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #99ccff;
+        }
+        .avatar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .avatar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #66b0ff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #333;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.02);
+            border-color: #66b0ff;
+        }
+        .info-block {
+            background-color: #252525;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #66b0ff;
+            color: #0a0a0a;
+            font-weight: bold;
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #99ccff;
+            text-decoration: none;
+        }
+        hr {
+            border: 1px solid #333;
+            margin: 30px 0;
+        }
+        .small-note {
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Аватарка -->
+        <div class="avatar">
+            <!-- Замените avatar.png на путь к вашей аватарке -->
+            <img src="avatar.png" alt="Avatar" onerror="this.src='https://via.placeholder.com/100?text=Avatar'">
+            <h1>Rody's Quiet Place [BETA]</h1>
+        </div>
+
+        <!-- Кто помогал -->
+        <h2>Кто помогал в реализации проекта</h2>
+        <p>
+            <b>3D художник:</b><br>
+            Markovi4900<br><br>
+            <b>2D художники:</b><br>
+            Markovi4900<br>
+            lemmlmyyy<br>
+            Sidget<br><br>
+            <b>Аниматор</b><br>
+            MrYaroslav0703<br><br>
+            <b>Музыка и звуки</b><br>
+            MrYaroslav0703<br>
+            isho games<br><br>
+        </p>
+
+        <!-- 3D Моделлер -->
+        <h2>3D Моделлер</h2>
+        <p>MrYaroslav0703</p>
+
+        <!-- Telegram канал -->
+        <p>
+            <a href="https://t.me/IgamesDev" target="_blank"><b>Наш ТГ-канал</b></a>
+        </p>
+
+        <!-- Галерея (3 фото) -->
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <!-- Замените gallery1.png, gallery2.png, gallery3.png на свои изображения -->
+            <img src="gallery1.png" alt="Screenshot 1" onerror="this.src='https://via.placeholder.com/300x200?text=Gallery+1'">
+            <img src="gallery2.png" alt="Screenshot 2" onerror="this.src='https://via.placeholder.com/300x200?text=Gallery+2'">
+            <img src="gallery3.png" alt="Screenshot 3" onerror="this.src='https://via.placeholder.com/300x200?text=Gallery+3'">
+        </div>
+
+        <!-- Инструкция по установке -->
+        <h2>Как установить Rody's Quiet Place [BETA]</h2>
+        <div class="info-block">
+            <ol>
+                <li>Скачай и установи <a href="https://minecraft-inside.ru/mods/8955-minecraft-forge.html" target="_blank">Minecraft Forge</a></li>
+                <li>Скачай и установи <a href="https://minecraft-inside.ru/mods/146483-geckolib.html" target="_blank">Geckolib</a></li>
+                <li>Скачай мод (кнопка ниже)</li>
+                <li>Не распаковывая, скопируй в .minecraft\mods</li>
+                <li>Готово!</li>
+            </ol>
+        </div>
+
+        <!-- Скачать мод -->
+        <h2>Скачать Rody's Quiet Place [BETA]</h2>
+        <!-- Замените путь на ваш .jar файл -->
+        <a href="rodys_quiet_place-1.0.0-forge-1.20.1.jar" class="download-btn" download>⬇ Скачать мод (версия BETA)</a>
+        <p class="small-note">* если файл лежит в другой папке, укажите правильный путь</p>
+
+        <!-- Альтернативная ссылка для формата download=470996 (раскомментируйте при необходимости) -->
+        <!-- <p>Прямая ссылка: <a href="https://minecraft-inside.ru/download/470996">скачать</a></p> -->
+
+        <hr>
+        <p style="text-align: center;">© 2025 Rody's Quiet Place. Все права защищены.</p>
+    </div>
+</body>
+</html>
